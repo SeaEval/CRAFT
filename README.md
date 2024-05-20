@@ -2,7 +2,7 @@
 
 
 
-[SG Instructions from GPT4](https://huggingface.co/datasets/SeaEval/CRAFT-Singapore-GPT4)
+[SG Instructions](https://huggingface.co/SeaEval)
 
 ... More to come
 
