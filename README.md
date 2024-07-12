@@ -1,4 +1,4 @@
-# CRAFT
+# CRAFT is a gather of automatically constructed instruction for various regions.
 
 
 
