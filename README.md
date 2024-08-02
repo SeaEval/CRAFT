@@ -1,14 +1,18 @@
-# CRAFT is a gather of automatically constructed instruction for various regions.
+<h1 align="center">🔥 AudioBench 🔥</h1>
 
 
+<p align="center">
+  <a href="https://arxiv.org/abs/2405.03138"><img src="https://img.shields.io/badge/arXiv-2405.03138-b31b1b.svg" alt="arXiv"></a>
+</p>
 
-[SG Instructions](https://huggingface.co/SeaEval)
-
-... More to come
+# CRAFT: An Involving Instruction Tuning Set for Regions Around the World
 
 
-
-
+|  Region   |       Samples           |    Type    | Link |
+| :-----: | :------------------: | :--------------------: | :---- |
+| Singapore |     26k       |     Question-Answer            | [Huggingface](https://huggingface.co/datasets/SeaEval/CRAFT-Singapore-Instruction-GPT4) |
+| Singapore |     148k       |     Question-Answer            | [Huggingface](https://huggingface.co/datasets/SeaEval/CRAFT-Singapore-147k) |
+| Singapore |     167k       |     Question-Answer            | [Huggingface](https://huggingface.co/datasets/SeaEval/CRAFT-Singapore-v2-166k) |
 
 
 
