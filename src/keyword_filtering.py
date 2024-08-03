@@ -30,8 +30,10 @@ def main(
 
     # read the raw data
     data = load_from_disk('data/slimpajama/train')
-    data = data.select(range(chunk_index*10000000, min(len(data),(chunk_index+1)*10000000)))
-    logger.info('This is from range {} to {}'.format(chunk_index*10000000, min(len(data),(chunk_index+1)*10000000)))
+
+    per_chunk_sample_size = 10000000
+    data = data.select(range(chunk_index*per_chunk_sample_size, min(len(data),(chunk_index+1)*per_chunk_sample_size)))
+    logger.info('This is from range {} to {}'.format(chunk_index*per_chunk_sample_size, min(len(data),(chunk_index+1)*per_chunk_sample_size)))
 
     # tokenizer
     tokenizer = AutoTokenizer.from_pretrained(model, use_fast=True)
@@ -65,12 +67,12 @@ def main(
         filter_keywords,
         batched           = True,
         batch_size        = 1,
-        num_proc          = 256,
+        num_proc          = 64,
         writer_batch_size = 1000,
         remove_columns    = ['tokens', 'simhash'],
     )
 
-    data.save('data/{}/filtered_text/chunk_{}'.format(region, chunk_index))
+    data.save_to_disk('data/{}/filtered_text/chunk_{}'.format(region, chunk_index))
 
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
 
 
 
-for i in {0..2}
+for i in {0..60}
 do
 
     #echo "Processing chunk $i"
